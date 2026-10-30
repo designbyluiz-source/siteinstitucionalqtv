@@ -17,3 +17,34 @@
 
 .brand>.brand-logo{width:205px;max-width:100%;height:auto;filter:none}.footer-top .brand>.brand-logo{width:220px}
 @media(max-width:760px){.brand>.brand-logo,.footer-top .brand>.brand-logo{width:180px}}
+
+/* The connector bus occupies the gap, behind the complete brand block. */
+.infra-graph {
+  --core:91px; --gap:35px; --items:204px; --bus:calc(var(--gap)/2);
+  display:grid; grid-template-columns:var(--core) minmax(0,var(--items));
+  gap:var(--gap); justify-content:end; isolation:isolate;
+}
+.graph-core { position:relative; z-index:2; width:var(--core); height:var(--core); min-width:0; }
+.graph-trunk {
+  z-index:0; left:auto; right:calc(var(--items) + var(--bus));
+  top:calc((100% - 36px)/10); bottom:calc((100% - 36px)/10);
+  width:0; border:0; border-left:1px dashed #c3c8cc; border-radius:0;
+}
+.graph-trunk:before { content:''; position:absolute; top:50%; right:0; width:var(--bus); border-top:1px dashed #c3c8cc; }
+.graph-items { z-index:1; min-width:0; }
+.graph-items>span:before { left:calc(-1 * var(--bus)); width:var(--bus); border-color:#c3c8cc; }
+.offering-art[data-illustration] {
+  position:relative; aspect-ratio:440/340; max-width:440px;
+  width:100%; min-width:0; isolation:isolate;
+}
+.offering-art[data-illustration]>img { max-width:none; width:100%; height:100%; object-fit:contain; }
+.illustration-canvas { position:absolute; inset:0; width:100%; height:100%; display:block; visibility:hidden; touch-action:pan-y; }
+.has-illustration>.illustration-canvas { visibility:visible; }
+.has-illustration>img { visibility:hidden; }
+@media(max-width:1100px) { .infra-graph { --core:75px; --gap:22px; --items:180px; } }
+@media(max-width:760px) {
+  .infra-graph { --core:80px; --gap:36px; --items:calc(100% - var(--core) - var(--gap)); grid-template-columns:var(--core) minmax(0,1fr); }
+  .offering-art[data-illustration] { max-width:330px; max-height:none; height:auto; overflow:visible; aspect-ratio:440/340; }
+  .offering-art[data-illustration]>img { height:auto; max-width:none; width:100%; }
+}
+@media(max-width:360px) { .infra-graph { --core:65px; --gap:24px; } }

@@ -1,2 +1,2 @@
 import { build } from 'esbuild';
-await build({entryPoints:['src/hero.js'],outfile:'dist/assets/hero-3d.js',bundle:true,format:'esm',minify:true,target:['es2020'],legalComments:'linked'});
+await build({entryPoints:{'hero-3d':'src/hero.js','illustrations-3d':'src/illustrations.js'},outdir:'dist/assets',bundle:true,splitting:true,format:'esm',minify:true,target:['es2020'],chunkNames:'shared-[hash]',legalComments:'linked'});

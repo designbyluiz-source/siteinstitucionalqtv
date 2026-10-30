@@ -33,3 +33,9 @@ Conferidos no navegador: desktop e celular, menu, abas de cases e soluções, as
 A marca central usa o contorno completo do SVG oficial extrudado em 3D. Não há cortes, divisões ou movimentos de partes isoladas. O símbolo inteiro flutua e gira suavemente como uma única peça. Os discos permanecem fixos e alternam grupos de cor em sincronia com o título. A cena pausa fora da tela e em segundo plano, respeita a preferência de redução de movimento e mantém a imagem estática como alternativa se WebGL não estiver disponível.
 
 Para reconstruir o módulo 3D: `npm ci` e `npm run build`.
+
+## Ilustrações de soluções
+
+`src/illustrations.js` renderiza três cenas independentes: cartões completos com chip, moedas sólidas e um globo com continentes e órbita contínua. As animações pausam fora da tela e em segundo plano, e respeitam a preferência de redução de movimento. Imagens equivalentes em `dist/assets/payment-cards.jpg`, `digital-coins.jpg` e `global-globe.jpg` são usadas se 3D estiver indisponível.
+
+O módulo compartilha a biblioteca Three.js com a hero pelo empacotamento de `build.mjs`. A hero mantém sua implementação existente. Dados de continentes: Natural Earth, domínio público, https://www.naturalearthdata.com/about/terms-of-use/.
