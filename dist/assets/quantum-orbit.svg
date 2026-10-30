@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 438" fill="none">
+<defs>
+ <radialGradient id="ambient"><stop stop-color="#f2eee3"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+ <radialGradient id="sphere" cx=".29" cy=".16" r=".92"><stop stop-color="#607c91"/><stop offset=".26" stop-color="#304c63"/><stop offset=".65" stop-color="#102335"/><stop offset="1" stop-color="#07131e"/></radialGradient>
+ <linearGradient id="rim" x1="470" y1="90" x2="680" y2="320" gradientUnits="userSpaceOnUse"><stop stop-color="#bdccd4"/><stop offset=".5" stop-color="#658192"/><stop offset="1" stop-color="#112235"/></linearGradient>
+ <linearGradient id="gold" x1="300" y1="100" x2="850" y2="330" gradientUnits="userSpaceOnUse"><stop stop-color="#f4cf6a"/><stop offset=".3" stop-color="#b38928"/><stop offset=".6" stop-color="#f0ae00"/><stop offset="1" stop-color="#d7ba79"/></linearGradient>
+ <linearGradient id="platform" x1="580" y1="292" x2="580" y2="354" gradientUnits="userSpaceOnUse"><stop stop-color="#e3e7e9"/><stop offset="1" stop-color="#fbfcfc"/></linearGradient>
+ <filter id="shadow" x="-40%" y="-60%" width="180%" height="230%"><feGaussianBlur stdDeviation="15"/></filter>
+ <filter id="chipshadow" x="-40%" y="-40%" width="180%" height="200%"><feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#102335" flood-opacity=".07"/></filter>
+ <clipPath id="ball"><circle cx="580" cy="202" r="116"/></clipPath>
+ <pattern id="dots" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".65" fill="#102335" opacity=".13"/></pattern>
+ <radialGradient id="dotmask"><stop stop-color="white"/><stop offset="1" stop-color="black"/></radialGradient>
+ <mask id="mask"><ellipse cx="580" cy="225" rx="570" ry="220" fill="url(#dotmask)"/></mask>
+</defs>
+<ellipse cx="580" cy="236" rx="520" ry="210" fill="url(#ambient)"/>
+<path fill="url(#dots)" mask="url(#mask)" d="M0 0h1160v438H0z"/>
+<g stroke="#e5e9eb" stroke-width=".7"><path d="M580 18v365M75 226h1010" stroke-dasharray="3 7"/><ellipse cx="580" cy="237" rx="446" ry="139"/><ellipse cx="580" cy="237" rx="341" ry="102"/></g>
+<ellipse cx="580" cy="339" rx="137" ry="16" fill="#18334a" opacity=".17" filter="url(#shadow)"/>
+<path d="M438 318v13c0 20 64 36 142 36s142-16 142-36v-13" fill="url(#platform)" stroke="#e5e9eb"/>
+<ellipse cx="580" cy="318" rx="142" ry="34" fill="#f3f5f5" stroke="#dfe5e8"/>
+<ellipse cx="580" cy="318" rx="119" ry="26" stroke="#d7dee1"/>
+<ellipse cx="580" cy="234" rx="402" ry="107" transform="rotate(-9 580 234)" stroke="url(#gold)" stroke-width="1.25"/>
+<circle cx="580" cy="202" r="117" fill="url(#rim)"/>
+<circle cx="580" cy="202" r="116" fill="url(#sphere)"/>
+<g clip-path="url(#ball)" stroke="#a1bac9" stroke-opacity=".24" stroke-width=".7">
+ <ellipse cx="580" cy="202" rx="88" ry="116" transform="rotate(-18 580 202)"/>
+ <ellipse cx="580" cy="202" rx="44" ry="116" transform="rotate(-18 580 202)"/>
+ <path d="m544 91 72 222"/><ellipse cx="580" cy="202" rx="116" ry="34" transform="rotate(-18 580 202)"/>
+ <ellipse cx="580" cy="158" rx="107" ry="29" transform="rotate(-18 580 158)"/>
+ <ellipse cx="580" cy="247" rx="106" ry="29" transform="rotate(-18 580 247)"/>
+ <ellipse cx="580" cy="122" rx="81" ry="21" transform="rotate(-18 580 122)"/>
+ <ellipse cx="580" cy="281" rx="81" ry="21" transform="rotate(-18 580 281)"/>
+</g>
+<circle cx="580" cy="202" r="114.5" stroke="#c9d7df" stroke-opacity=".14"/>
+<g transform="translate(517 168) scale(.187)" fill="#fff"><path d="M529.67,394.95V64.59h66.41C635.2,64.59,672.2,35.67,672.2,0h0s-474.2,0-474.2,0c-42.53,0-84.7,14.04-118.75,39.54C45.21,65.04,19.88,101.57,7.92,142.39c-11.95,40.82-10.33,85.24,4.57,125.07,14.9,39.84,42.83,74.42,78.64,97.36,35.81,22.95,78.89,33.88,121.32,30.77,32.91-2.41,64.97-13.12,92.72-30.97l8.68-5.59,7.67,6.91c7.29,6.57,16.72,9.91,26.51,9.38,9.8-.52,18.81-4.82,25.37-12.12l17.08-19-32.33-29.07,6.25-9.67c13.01-20.16,22.17-42.28,27.22-65.75,5.51-25.63,5.84-52.48,1.01-78.27h-66.27c6.02,20.97,6.77,43.01,2.11,64.68-2.22,10.32-5.67,20.37-10.25,29.87l-7.82,16.22-101.76-91.52c-18.96,30.65-14,71.6,13.57,96.65l42.38,38.51-21.04,7.64c-11.54,4.19-23.59,6.77-35.83,7.66-28.6,2.09-57.62-5.27-81.75-20.74-24.13-15.47-42.96-38.77-53-65.61-10.04-26.85-11.14-56.78-3.08-84.29,8.06-27.51,25.13-52.12,48.07-69.3,22.94-17.18,51.36-26.65,80.02-26.65h267.48v253.83c0,38.24,27.77,70.12,64.19,76.53Z"/></g>
+<path d="M303 304c137 66 450 46 620-66" stroke="url(#gold)" stroke-width="1.8"/>
+<circle cx="468" cy="327" r="4" fill="#f0ae00" stroke="#fff" stroke-width="2"/>
+<circle cx="887" cy="270" r="3" fill="#f0ae00"/>
+<g transform="translate(194 166)"><rect x="-34" y="-29" width="68" height="58" rx="13" fill="white" stroke="#e0e5e9" filter="url(#chipshadow)"/><g stroke="#203a4e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"><rect x="-13" y="-9" width="26" height="18" rx="3"/><path d="M-13-3h26M-8 4h6"/></g><circle cx="26" cy="-22" r="3.5" fill="#f0ae00" stroke="white" stroke-width="2"/><text y="49" fill="#6e7d88" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2" text-anchor="middle">PAGAMENTOS</text></g><g transform="translate(353 76)"><rect x="-34" y="-29" width="68" height="58" rx="13" fill="white" stroke="#e0e5e9" filter="url(#chipshadow)"/><g stroke="#203a4e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"><path d="m-6-7-8 7 8 7m12-14 8 7-8 7M3-11-3 11"/></g><circle cx="26" cy="-22" r="3.5" fill="#f0ae00" stroke="white" stroke-width="2"/><text y="49" fill="#6e7d88" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2" text-anchor="middle">SOFTWARE</text></g><g transform="translate(803 88)"><rect x="-34" y="-29" width="68" height="58" rx="13" fill="white" stroke="#e0e5e9" filter="url(#chipshadow)"/><g stroke="#203a4e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"><circle r="12"/><ellipse rx="5" ry="12"/><path d="M-12 0h24M-10-6h20M-10 6h20"/></g><circle cx="26" cy="-22" r="3.5" fill="#f0ae00" stroke="white" stroke-width="2"/><text y="49" fill="#6e7d88" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2" text-anchor="middle">CROSS-BORDER</text></g><g transform="translate(968 196)"><rect x="-34" y="-29" width="68" height="58" rx="13" fill="white" stroke="#e0e5e9" filter="url(#chipshadow)"/><g stroke="#203a4e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"><path d="m0-13 11 13L0 13-11 0Z"/><path d="m-11 0 11 4 11-4M0-13V4"/></g><circle cx="26" cy="-22" r="3.5" fill="#f0ae00" stroke="white" stroke-width="2"/><text y="49" fill="#6e7d88" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2" text-anchor="middle">ATIVOS DIGITAIS</text></g><g transform="translate(813 321)"><rect x="-34" y="-29" width="68" height="58" rx="13" fill="white" stroke="#e0e5e9" filter="url(#chipshadow)"/><g stroke="#203a4e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"><path d="M-13-5h26m-5-5 5 5-5 5M13 6h-26m5-5-5 5 5 5"/></g><circle cx="26" cy="-22" r="3.5" fill="#f0ae00" stroke="white" stroke-width="2"/><text y="49" fill="#6e7d88" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2" text-anchor="middle">TRANSAÇÕES</text></g><g transform="translate(310 314)"><rect x="-34" y="-29" width="68" height="58" rx="13" fill="white" stroke="#e0e5e9" filter="url(#chipshadow)"/><g stroke="#203a4e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"><path d="M-12 11V-9M-12 11h26M-8 5l7-7 7 3 7-13"/><path d="M7-12h6v6"/></g><circle cx="26" cy="-22" r="3.5" fill="#f0ae00" stroke="white" stroke-width="2"/><text y="49" fill="#6e7d88" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.2" text-anchor="middle">PREDIÇÃO</text></g><g fill="#a2aeb6"><circle cx="423" cy="149" r="2"/><circle cx="748" cy="217" r="2"/><circle cx="695" cy="70" r="2"/><circle cx="156" cy="288" r="2"/><circle cx="1004" cy="108" r="2"/></g></svg>
